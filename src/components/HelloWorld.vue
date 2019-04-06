@@ -3,12 +3,17 @@
     <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
     <el-col id="eg1" :xs="24" :sm="24" :lg="12" style="height:400px;"></el-col>
     <el-col id="eg2" :xs="24" :sm="24" :lg="12" style="height:400px;"></el-col>
+    <el-col :sm="24">
+      <HelloWorld2/>
+    </el-col>
   </el-row>
 </template>
 
 <script>
+  import HelloWorld2 from "@/components/HelloWorld2";
   export default {
     name: 'HelloWorld',
+    components: {HelloWorld2},
     data() {
       return {
         eg1Options: {
